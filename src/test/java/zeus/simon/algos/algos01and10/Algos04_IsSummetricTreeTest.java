@@ -5,11 +5,11 @@ import org.junit.Test;
 import zeus.simon.algos.Helper;
 import zeus.simon.algos.TreeNode;
 
-public class AlgosIsSummetricTree04Test {
+public class Algos04_IsSummetricTreeTest {
 
     @Test
     public void testRecursiveVersion() {
-        AlgosIsSummetricTree04 s = new AlgosIsSummetricTree04();
+        Algos04_IsSummetricTree s = new Algos04_IsSummetricTree();
         TreeNode tree1 = Helper.buildTree(1, 2, 2, 4, 8, 8, 4);
         TreeNode tree2 = Helper.buildTree(1, 2, 2, 4, 8, 8, null);
         Assert.assertEquals(true, s.isSymmetricTreeRecursive(tree1));
@@ -18,7 +18,7 @@ public class AlgosIsSummetricTree04Test {
 
     @Test
     public void testIterativeVersion() {
-        AlgosIsSummetricTree04 s = new AlgosIsSummetricTree04();
+        Algos04_IsSummetricTree s = new Algos04_IsSummetricTree();
         TreeNode tree1 = Helper.buildTree(1, 2, 2, 4, 8, 8, 4);
         TreeNode tree2 = Helper.buildTree(1, 2, 2, 4, 8, 8, null);
         Assert.assertEquals(true, s.isSymmetricTreeIterative(tree1));

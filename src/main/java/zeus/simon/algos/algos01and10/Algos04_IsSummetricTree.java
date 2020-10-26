@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * 判断二叉树是否沿中轴线对称
  */
-public class AlgosIsSummetricTree04 {
+public class Algos04_IsSummetricTree {
 
     private boolean isSummetric(TreeNode s, TreeNode t) {
         if (s != null && t != null) {
